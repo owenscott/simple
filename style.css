@@ -1,0 +1,64 @@
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 18px;
+	background-color: lightgrey;
+	text-align: justify;
+}
+
+img {
+	width: 90%;
+	margin: 2em;
+	border:1px solid #021a40;
+}
+
+h1, h2 {
+	font-family: Cambria,Georgia,serif;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+figure {
+	border-bottom: 1px solid darkgrey;
+	margin-bottom: 2em;
+	width: 90%;
+}
+
+button {
+	width: 150px;
+	height: 50px;
+	display: block;
+	font-size: 1em;
+	margin: 3em auto 0 auto;
+	background-color: rgb(34,34,90);
+	color: white;
+	border: 0px;
+	border-radius: 0.5em;
+	font-family: inherit;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0px auto;
+	background-color: white;
+	padding: 2em;
+	border-radius: .5em;
+}
+
+.task {
+	width: 90%;
+	margin: 1em auto;
+	background-color: rgb(225, 242, 247);
+	padding: .25em;
+	border-radius: 0.5em;
+}
+
+.task p {
+	padding: 0 .5em;
+}
+

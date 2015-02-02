@@ -1,0 +1,69 @@
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Owen Scott">
+		<title>A Pretty Simple Website</title>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	
+	<body>
+
+		<!-- Hey there! This is a comment. It isn't displayed on the webpage - it is only here for people looking at the source code. People like you :) -->
+		
+		<div class="container">
+			
+			<section id="intro">
+				<h1>A Pretty Simple Website</h1>
+				<p>Most real websites are messy. They are full of scripts, stylesheets, hidden sections, search-engine-optimization (SEO), and all kinds of other miscellaneous HTML, CSS, and JavaScript. Looking through the source code of real websites can be intimidating or confusing, even for people who have a lot of experience.</p>
+				<p>This website is intentionally simple. Hopefuly it's simplicity will make it easier to understand how you can examine a live website.</p>
+			</section>
+			
+			<section id="exercise">
+				
+				<h1>An Exercise</h1>
+
+				<h2>Part 1: Find the Page Source</h2>
+				<p>There are two ways to look at a web page's <em>source code</em>. Firstly, tou can open up the entire page's source code in a new tab in your browser. Alternatively, you can use your browser's <em>Developer Tools</em> to explore the page's source interactively. Both approaches are shown in the figures below.</p>
+				<figure>
+					<a href="img/amazon-source.png"><img src="img/amazon-source.png"></a>
+					<figcaption>Amazon.co.uk source code shown in a new browser tab. You can view a page's source code in Chrome with <em>Option-Command-u</em> in OSX or <em>Ctrl-u</em> in Windows.</figcaption>
+				</figure>
+				<figure>
+					<a href="img/amazon-dev-tools.png"><img src="img/amazon-dev-tools.png"></a>
+					<figcaption>Amazon.co.uk being explored interactively using the developer tools. You can open the developer tools in Chrome with <em>Option-Command-i</em> in OSX or <em>Ctrl-Shift-i</em> in Windows.</figcaption>
+				</figure>
+				<div class="task"><p><strong>Task 1.1:</strong> Use both <em>View Source</em> and <em>Developer Tools</em> to look at the source code for this webpage</p></div>
+				
+				<h2>Part 2: Specific Tasks</h2>
+				<div class="task"><p><strong>Task 2.1:</strong> Can you figure out which HTML element is used to make the words "Task 2.1" bold in this sentence?</p></div>
+				<div class="task"><p><strong>Task 2.2:</strong> Can you figure out what CSS class is used to share formatting between all of the "Task" boxes?</p></div>
+				<div class="task"><p><strong>Task 2.3:</strong> Can you find the actual CSS code being used to style the Task elements? Where is it located?</p></div>
+				<div class="task"><p><strong>Task 2.4:</strong> Click on the button below. What happens? Can you find the relevant JavaScript code?</p></div>
+
+			</section>
+
+			<section id="button">
+				<button onclick="doSomething()">Click Me!!!</button>
+			</section>
+
+		<script>
+			
+			function doSomething() {
+				alert('Hello');
+			}
+			
+			// yup, this is the code that made the button work for Task 2.4. good job finding it!
+			// as a side note, using "onclick" is considered pretty low-brow, but
+			// I wanted to keep this example simple :)
+
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+	
