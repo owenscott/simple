@@ -62,3 +62,24 @@ button {
 	padding: 0 .5em;
 }
 
+ul li {
+	padding: .25em;
+}
+
+ul.nav {
+	width: 100%;
+	margin: 1em 0 1em auto;
+	padding: 0;
+}
+
+ul.nav li {
+	display: inline;
+}
+
+pre.code {
+	font-size: .75em;
+	background-color: lightgrey;
+	padding: 1em 1em 0 1em;
+	border-radius: 0.5em;
+}
+

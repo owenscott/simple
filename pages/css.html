@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Owen Scott">
+		<title>Introduction to CSS</title>
+		<link rel="stylesheet" href="../assets/style.css"/>
+		<link rel="stylesheet" href="../assets/shapes.css"/>
+		<!--MIT LICENSE-->
+	</head>
+	
+	<body>
+
+
+
+		<div class="container">
+			
+			<header>
+				<ul class="nav">
+					<li><a href="../index.html">Back</a></li>
+				</ul>
+			</header>
+
+			<section id="intro">
+				<h1>An Introduction to CSS</h1>
+				<p>HTML provides a webpage's basic content, but CSS controls how that content is displayed. The rules for CSS can be complicated and arbitrary. For this reason, it is ultimately more important to understand how to <em>learn</em> about CSS than to memorize particular rules. This set of exercises will help you learn how to learn about CSS.</p>
+			</section>
+			
+			<section id="exercises">
+				
+				<h1>Learning About CSS</h1>
+
+				<h2>1. Shorthands</h2>
+				<p>Over time CSS has developed a number of shortcuts to allow developers to save time while designing webpages. For instance, take a look at the box below:</p>
+
+				<div class="box-simple">
+				</div>
+
+				<p>The CSS for this box could be written like this:</p>
+				<pre class="code">
+.box-simple {
+	border-width: 1px;
+	border-style: dashed;
+	border-color: black;
+	width: 150px;
+	height: 75px;
+}
+				</pre>
+
+				<p>However, to simplify things, we can use a shorthand to write the CSS like this instead:</p>
+
+				<pre class="code">
+.box-simple {
+	border: 1px dashed black;
+	width: 150px;
+	height: 75px;
+}
+				</pre>
+
+				<p>Notice that the three border properties, <em>border-width</em>, <em>border-style</em>, and <em>border-color</em> are combined together into one <em>border</em> property. CSS is full of so many shortcuts like this that it is futile to try to memorize everything (especially as a beginner!). The crucial skill to learn is how to <strong>research CSS syntax online.</strong> (Trust us, this is a life-long skill employed daily by all front-end developers!!!)</p>
+
+				<div class="task">
+					<p><strong>Task 1.1:</strong> Research the CSS <em>border</em> property on the <a href="http://www.w3schools.com/css/css_border.asp">W3Schools</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">Mozilla Developer Network</a> website. Which one do you find more helpful? Why?</p>
+				</div>
+
+				<div class="task">
+					<p><strong>Task 1.2:</strong> Try doing a Google search yourself for the CSS <em>border</em> property. Can you find any useful resources?</p>
+				</div>
+
+				<h2>2. Experimenting With Developer Tools</h2>
+				<p>Recall that we can open Chrome's <em>Developer Tools</em> with <em>ctrl-shift-i</em> on Windows and <em>option-cmd-i</em> on Mac. Developer tools can be used for experimenting with CSS directly in the browser. When you're trying to figure out a design tweak, sometimes this can be faster than editing your source files.</p>
+
+				<figure>
+					<a href="../img/editing-css.png"><img src="../img/editing-css.png"></a>
+					<figcaption>You can use the Developer Tools to live-edit CSS in a webpage.</figcaption>
+				</figure>
+
+				<div class="task">
+					<p><strong>Task 2.1:</strong> Change the background color of the box below to green using Developer Tools</p>
+					<div class="box-task">
+					</div>
+				</div>
+
+				<div class="task">
+					<p><strong>Task 2.2:</strong> Using Developer Tools, make the first row of boxes below look like the second one.</p>
+					<div class="box-row-container">
+						<div class="box-task box-row">
+						</div>
+						<div class="box-task box-row">
+						</div>
+						<div class="box-task box-row">
+						</div>
+					</div>
+					<div class="box-row-container">
+						<div class="box-task box-row" id="box1">
+						</div>
+						<div class="box-task box-row" id="box2">
+						</div>
+						<div class="box-task box-row" id="box3">
+						</div>
+					</div>
+				</div>
+
+				
+
+				<h2>3. Some More HTML</h2>
+				<p>Just for practice, let's use developer tools to look at some of this page's HTML.</p>
+				<div class="task"><p><strong>Task 3.1:</strong> Use developer tools to find out what HTML element was used to display the CSS code in section 1 above.</p></div>
+				<div class="task"></p><strong>Task 3.2:</strong> Look up that HTML element on W3Schools or the Mozilla Developers Network. What is it? How is it used?</div>
+
+			</section>
+
+
+
+		</div>
+
+
+	</body>
+</html>
