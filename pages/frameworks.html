@@ -37,17 +37,17 @@
 				<p>For instance, under <a href="http://en.wikipedia.org/wiki/HTML5">the newest version of HTML</a> several <a href="http://www.hongkiat.com/blog/html5-form-input-type/">new form inputs</a> have been added, including one for picking colors from a pallete. In theory, using the new input element should be simple: you just pop a <code>&lt;input type="color"&gt;</code> into your webpage and the user gets a beautiful color selection tool. Here is an example:</p>
 
 <pre class="code">
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;HTML Color Input Example&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;h1&gt;An example form with a color input selector.&lt;/h1&gt;
-    &lt;form&gt;
-      &lt;label for=&quot;example&quot;&gt;Choose a Color: &lt;input name=&quot;example&quot; type=&quot;color&quot;&gt;&lt;/label&gt;
-    &lt;/form&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
+<span class="tag">&lt;html&gt;</span>
+  <span class="tag">&lt;head&gt;</span>
+    <span class="tag">&lt;title&gt;</span>HTML Color Input Example<span class="tag">&lt;/title&gt;</span>
+  <span class="tag">&lt;/head&gt;</span>
+  <span class="tag">&lt;body&gt;</span>
+    <span class="tag">&lt;h1&gt;</span>An example form with a color input selector.<span class="tag">&lt;/h1&gt;</span>
+    <span class="tag">&lt;form&gt;</span>
+      <span class="tag">&lt;label for=&quot;example&quot;&gt;</span>Choose a Color: <span class="tag">&lt;input name=&quot;example&quot; type=&quot;color&quot;&gt;</span><span class="tag">&lt;/label&gt;</span>
+    <span class="tag">&lt;/form&gt;</span>
+  <span class="tag">&lt;/body&gt;</span>
+<span class="tag">&lt;/html&gt;</span>
 
 </pre>
 
@@ -83,27 +83,39 @@
 
 				<p>A second huge challenge with building non-trivial HTML/CSS websites is getting a website to work seamlessly on different desktops, mobile phones, and tablets. In the industry, the art of building a site that works well on any device is typically known as "<em>responsive design"</em>. Responsive design is about building a site that is so fluid, it adjusts automatically to any device size.</p>
 
-				<p>Check out <a href="../examples/not-responsive.html">this site</a> on your laptop. Looks pretty reasonable right? Now try checking it out on your mobile phone. (<a href="http://owenscott.github.io/simple/examples/not-responsive.html">http://owenscott.github.io/simple/examples/not-responsive.html</a>). Not so reasonable. I'm sure we've all had the experience of trying to book a bus ticket or flight on a mobile phone, and facing the challenge of a site's layout which simply doesn't respond to the device.</p>
+				<p>Check out <a href="../examples/not-responsive.html">this site</a> on your laptop. Looks pretty reasonable right? Now try checking it out on your mobile phone (<a href="http://bit.ly/1CzAHoL">http://bit.ly/1CzAHoL</a>). Not so reasonable. I'm sure we've all had the experience of trying to book a bus ticket or flight on a mobile phone, and facing the challenge of a site's layout which simply doesn't respond to the device.</p>
 
-				<p>Now visit <a href="../examples/responsive.html">this site</a> on your laptop. Looks the same as the last one, I hope. but try it on your mobile phone. With any luck it should look much better. This is the beauty and simplicity of responsive design.</p>
+				<p>Now visit <a href="../examples/responsive.html">this site</a> on your laptop. Looks the same as the last one, I hope. but try it on your mobile phone (<a href="http://bit.ly/1AdkuqM">http://bit.ly/1AdkuqM</a>). With any luck it should look much better. This is the beauty and simplicity of responsive design.</p>
 
 				<div class="task">
-					<p><strong>Task 1.3:</strong> Visit each of the above pages on your laptop and use <em>developer tools</em> to look at the HTML and CSS. Can you find the differences between the CSS for the responsive and unresponsive pages?</p>
+					<p><strong>Task 1.3:</strong> Visit the <a href="../examples/not-responsive.html">non-responsive</a> and <a href="../examples/responsive.html">responsive</a> demo sites on your laptop and use <em>developer tools</em> to look at the HTML and CSS. Can you find the differences between the CSS for the responsive and unresponsive pages?</p>
 				</div>
 
 				<div class="task">
-					<p><strong>Task 1.4:</strong> A great simple way to test if a page is responsive is to resize the browser window horizontally. Visit the <a href="../examples/responsive.html">responsive page</a> above and resize the browser window. Watch how the layout changes once you reach a certain width.</p>
+					<p><strong>Task 1.4:</strong> A great simple way to test if a page is responsive is to resize the browser window horizontally. Visit the <a href="../examples/responsive.html">responsive page</a> above and resize the browser window horizontally (left to right). Watch how the layout changes once you reach a certain width.</p>
 				</div>
 
 
 				<div class="task">
-					<p><strong>Task 1.5 (bonus):</strong> A lot of front-end web developers obsessively resize browser windows to test if webpages are responsive. A lot of developers also know that developers do this, so through in little surprises. For a great example, visit <a href="http://www.stuffandnonsense.co.uk/">Stuff And Nonsense</a> and slowly resize the browser from narrow to wide.</p>
+					<p><strong>Task 1.5 (bonus):</strong> A lot of front-end web developers obsessively resize browser windows to test if webpages are responsive. A lot of developers also know that developers do this, so they throw in little surprises. For a great example, visit <a href="http://www.stuffandnonsense.co.uk/">Stuff And Nonsense</a> and slowly resize the browser from narrow to wide.</p>
 				</div>
 
 
 				<h1>Frameworks</h1>
 
-				<p>List a couple frameworks.</p>
+				<p>Hopefully by now you've realized that because of different browsers and mobile devices, HTML and CSS can be very tough to get right on a non-trivial website. Further, because browsers, devices, and the HTML/CSS standards are always changing, you need to be constantly testing your site in dozens of device-browser permutations. You can see how things can get out-of-hand quickly.</p>
+				<p>For this reason, many developers use <em>frameworks</em>. Frameworks are pre-made combinations of HTML and CSS that you can use for quickly designing and building sites.</p>
+
+			</section>
+
+			<section id="learn-more">
+				<h1>Learn More</h1>
+				<p>At this point our course diverges slightly. The rest of the CFG focuses on the Bootstrap framework. You'll be spending less time writing your own CSS, and more time learning to use one of the most popular and powerful frameworks out there. However, if you want to do your own deep-dive into writing your own modern CSS and responsive design, here are some resources:</p>
+				<ul>
+					<li><a href="http://learnlayout.com/">Learn Layout</a>. This site is slightly more advanced than what we've tackled in class, but provides a really thorough introduction to all of the ways to build your own modern, responsive CSS layout from scratch.</li>
+					<li><a href="http://www.abookapart.com/products/responsive-web-design">Responsive Web Design, the book.</a> An instant classic which literally launched the responsive design paradigm in 2011. Great read.</li>
+					<li><a href="https://www.codeschool.com/paths/html-css">Codeschool's CSS/HTML Pathway</a>. This is more advanced than General Assembly (and costs a bit of cash) but is a fantastic resource for "leveling up" your HTML/CSS skills to intermediate.</li>
+				</ul>
 
 			</section>
 
