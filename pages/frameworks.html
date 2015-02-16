@@ -22,17 +22,52 @@
 			</header>
 
 			<section id="intro">
-				<h1>CSS Quirks, Responsive Design, and Frameworks</h1>
+				<h1>Cross-browser Compatibility, Responsive Design, and Frameworks</h1>
 				<p>Last week we looked at using simple CSS to change the appearance of a webpage. This week we're looking at some of the situations where CSS is just a little bit more complicated.</p>
 			</section>
 			
 			<section id="exercises">
 				
-				<h1>Challenges With CSS</h1>
+				<h1>Challenges With HTML/CSS</h1>
 
 				<h2>Cross-Browser Compatibility</h2>
 
-				<p>foo</p>
+				<p>Unfortunately there is no law that says every browser vendor needs to implement every possible HTML element or CSS property. While HTML and CSS are "standards", ultimately the decision rests with the browser vendors on which features of those standards they will or won't support. In short, no one can force Google, Mozilla, or Apple to modify Chrome, Firefox, or Safari - they have to <em>choose</em> to make the browsers work with the newest HTML and CSS standards.</p>
+
+				<p>For instance, under <a href="http://en.wikipedia.org/wiki/HTML5">the newest version of HTML</a> several <a href="http://www.hongkiat.com/blog/html5-form-input-type/">new form inputs</a> have been added, including one for picking colors from a pallete. In theory, using the new input element should be simple: you just pop a <code>&lt;input type="color"&gt;</code> into your webpage and the user gets a beautiful color selection tool. Here is an example:</p>
+
+<pre class="code">
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;HTML Color Input Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;An example form with a color input selector.&lt;/h1&gt;
+    &lt;form&gt;
+      &lt;label for=&quot;example&quot;&gt;Choose a Color: &lt;input name=&quot;example&quot; type=&quot;color&quot;&gt;&lt;/label&gt;
+    &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</pre>
+
+				<p>Should be great right? Well, check out the page in action <a href="../examples/color.html">here</a>. Did it work for you? If you're using Chrome, it should have. As of Monday, February 16th, 2015, here is how it looks in several different browsers:</p>
+
+				<figure>
+					<a href="../img/color-picker-chrome.png"><img src="../img/color-picker-chrome.png"></a>
+					<figcaption>It seems to work alright in Chrome...</figcaption>
+				</figure>
+
+				<figure>
+					<a href="../img/color-picker-firefox.png"><img src="../img/color-picker-firefox.png"></a>
+					<figcaption>Also looks great in Firefox</figcaption>
+				</figure>
+
+
+				<figure>
+					<a href="../img/color-picker-safari.png"><img src="../img/color-picker-safari.png"></a>
+					<figcaption>Ooooh, but something has gone terrible wrong in Safari...</figcaption>
+				</figure>
 
 				<h2>Responsive Design</h2>
 
