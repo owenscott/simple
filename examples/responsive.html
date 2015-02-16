@@ -1,7 +1,7 @@
 <html>
 	<head>
 
-		<title>An Unresponsive Website</title>
+		<title>A Responsive Website</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
 
@@ -15,15 +15,26 @@
 			}
 
 			p {
-				font-size: 16px;
-				line-height: 20px;
+				font-size: 20px;
+				line-height: 24px;
 				text-align: justify;
 			}
 
 			.container {
-				width: 800px;
+				max-width: 800px;
 				margin-left: auto;
 				margin-right: auto;
+			}
+
+			@media (max-width: 600px) {
+			  h1 {
+			  	font-size: 20px;
+			  }
+			  p {
+			  	font-size: 16px;
+			  	line-height: 20px;
+			  }
+
 			}
 
 		</style>
@@ -31,7 +42,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<h1>An Unresponsive Website</h1>
+			<h1>An Responsive Website</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis facilisis est. Nulla dapibus commodo suscipit. Donec pulvinar odio vitae purus tempus, sit amet volutpat lacus interdum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam rutrum, enim at malesuada cursus, justo augue laoreet mauris, nec lacinia elit velit in turpis. Nullam nec dolor eget nunc luctus hendrerit. Sed a hendrerit quam. Fusce at dolor vitae orci scelerisque tristique sit amet dictum ligula. Ut tincidunt pulvinar tellus non finibus. Integer ut lorem vitae ligula egestas sodales. Curabitur congue vitae est ac laoreet.</p>
 		</div>
 
