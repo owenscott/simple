@@ -1,9 +1,10 @@
 body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	background-color: lightgrey;
 	text-align: justify;
 }
+
 
 p {
 	line-height: 1.25em;
@@ -90,4 +91,8 @@ pre.code {
 
 span.tag {
 	color: blue;
+}
+
+h1, h2, h3 {
+	text-align: left;
 }

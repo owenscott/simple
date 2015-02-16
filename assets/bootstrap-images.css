@@ -1,0 +1,17 @@
+/* 
+
+Hi there. If you're looking here you're on the right track, but I didn't actually use the Bootstrap framework. 
+Shameful, I know. The actual documentation for images within the Bootstrap framework is located here:
+
+http://getbootstrap.com/css/#images
+
+Seriously though, if you found this message it means that you a developer tools champion, which is going to be
+way more useful for you long-term than memorizing bootstrap classes anyways :D
+
+*/
+
+img.img-rounded {
+	width: 140px;
+	height: 140px;
+	border-radius: 70px;
+}

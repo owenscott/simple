@@ -6,6 +6,7 @@
 		<meta name="author" content="Owen Scott">
 		<title>Introduction to CSS</title>
 		<link rel="stylesheet" href="../assets/style.css"/>
+		<link rel="stylesheet" href="../assets/bootstrap-images.css"/>
 		<!--MIT LICENSE-->
 	</head>
 	
@@ -106,55 +107,20 @@
 				</div>
 
 
-				<h1>Frameworks</h1>
+				<h1>2. Frameworks</h1>
 
-				<p>Hopefully by now you've realized that HTML and CSS can be very tough to get right on a non-trivial website. Further, because browsers, devices, and the HTML/CSS standards are always changing, you need to be constantly testing your site in dozens of device-browser permutations. You can see how things can get out-of-hand quickly.</p>
-				<p>For this reason, many developers use <em>frameworks</em>. Frameworks are pre-made combinations of HTML and CSS that you can use for quickly designing and building sites. To think about frameworks, let's recall some key features of HTML and CSS.</p>
-				<p>First, let's look at a simple webpage.</p>
+				<p>Hopefully by now you've realized that HTML and CSS can be very tough to get right on any non-trivial website. Further, because browsers, devices, and the HTML/CSS standards are always changing, you need to be constantly testing your site in dozens of device-browser permutations. You can see how things can get out-of-hand quickly.</p>
+				<p>For this reason, many developers use <em>frameworks</em>. Frameworks are pre-made combinations of HTML and CSS that you can use for quickly designing and building sites.</p>
+				<p>Using a framework is different from writing your own CSS. Typically to use a framework you download a CSS file from the framework's website, and include it with your webpage. Then, instead of writing your own CSS, you simply use classnames provided by that framework. For instance, using the Bootstrap framework, <code>&lt;p class=&quot;text-danger&quot;&gt;...&lt;/p&gt;</code> will automatically style a paragraphs text in red, as a warning to the user. (Which you can use, for instance, when you're trying to flag that they filled out a form incorrectly). Frameworks typically provide a huge number of CSS classes that you can use directly in your HTML, eliminating the need to write CSS yourself.</p>
 
-				<pre class="code">
+				<p>In this class we will be using the Bootstrap framework. However, if you are curious about what other frameworks exist check out <a href="http://usablica.github.io/front-end-frameworks/compare.html">this page</a> for an exhaustive list.</p>
 
-<span class="tag">&lt;html&gt;</span>
-  
-  <span class="tag">&lt;head&gt;</span>
+				<div class="task">
+					<p><strong>Task 2.1:</strong> Take a look at the <a href="http://getbootstrap.com/css/">Bootstrap documentation</a>. Can you find the different CSS class names that you can use for styling an image? What class name would you use if you wanted to give an image a rounded border like this one?</p>
 
-    <span class="tag">&lt;title&gt;</span>Example<span class="tag">&lt;/title&gt;</span>
-    <span class="tag">&lt;link rel=&apos;stylesheet&apos; href=&apos;style.css&apos;/&gt;</span>
+					<img class="img-rounded" src="../img/tree.jpg">
 
-  <span class="tag">&lt;/head&gt;</span>
-
-  <span class="tag">&lt;body&gt;</span>
-
-    <span class="tag">&lt;div class=&apos;blue&apos;&gt;</span>  
-      <span class="tag">&lt;h1&gt;</span>Blue Section<span class="tag">&lt;/h1&gt;</span>
-      <span class="tag">&lt;p&gt;</span>Paragraph in the blue section.<span class="tag">&lt;/p&gt;</span>
-    <span class="tag">&lt;/div&gt;</span>
-
-    <span class="tag">&lt;div&gt;</span>  
-      <span class="tag">&lt;h1&gt;</span>Normal Section<span class="tag">&lt;/h1&gt;</span>
-      <span class="tag">&lt;p&gt;</span>Paragraph in the normal section.<span class="tag">&lt;/p&gt;</span>
-    <span class="tag">&lt;/div&gt;</span>
-
-  <span class="tag">&lt;/body&gt;</span>
-
-<span class="tag">&lt;/html&gt;</span>
-
-				</pre>
-
-				<p>And then, of course, if we want the blue section to be blue we have to add some CSS for the <code>blue</code> class:</p>
-
-				<pre class="code">
-.blue {
-  background-color: blue;
-}
-				</pre>
-
-				<figure>
-					<a href="../examples/blue.html"><img src="../img/blue.png"></a>
-					<figcaption>Our amazing blue and white website.</figcaption>
-				</figure>
-
-				<p>Now, imagine for some reason that we didn't actually trust ourselves to implement and maintain the CSS for that blue section on our own. Instead of writing our own CSS file, we could find a framework on the internet that managed background colors. We would download the CSS file from that framework, and link to it just like we do for the CSS files that we write ourselves. However, we would never edit the CSS - all we would do is change the classnames in our HTML.</p>
+				</div>
 
 			</section>
 
