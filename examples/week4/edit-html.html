@@ -1,0 +1,33 @@
+<html>
+	
+	<head>
+	
+		<title>Editing HTML</title>
+	
+		<style>
+			p#target {
+				border: 1px solid black;
+				border-radius: 5px;
+				height: 40px;
+				width: 500px;
+				padding: 5px;
+				background-color: navy;
+				color: white;
+			}
+		</style>
+
+		<script>
+			function editHtml() {
+				document.getElementById('target').innerHTML = 'Yes. We changed it!';
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<h1>An Example of How to Change HTML</h1>
+		<p id="target">This is the target of our program.</p>
+		<button onclick="editHtml()">Click Here</button>
+	</body>
+
+</html>

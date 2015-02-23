@@ -81,16 +81,20 @@ ul.nav li {
 	display: inline;
 }
 
-pre.code {
+pre code.html {
 	font-size: .75em;
-	background-color: lightgrey;
-	padding: 1em 1em 0 1em;
 	border-radius: 0.5em;
+	overflow-x: auto;
+	padding-left: 2em;
 }
+
+
+
 
 
 span.tag {
 	color: blue;
+	font-family: Courier;
 }
 
 h1, h2, h3 {
