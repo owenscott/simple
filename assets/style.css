@@ -100,3 +100,25 @@ span.tag {
 h1, h2, h3 {
 	text-align: left;
 }
+
+div.table {
+	overflow-x: auto;
+	margin-left: 20px;
+	margin-right: auto;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table thead th {
+	background-color: #006;
+	color: white;
+}
+
+table th, table td {
+	padding: 5px;
+	min-width: 200px;
+	border: 2px solid navy;
+	margin: 0px;
+}
