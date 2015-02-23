@@ -246,6 +246,46 @@
 
 				<div class="task"><p><strong>Task 2.3:</strong> Add a third button and function to your website. When the user clicks on the button, try to make some of the website's HTML change.</p></div>
 
+        <h2>One More Example (New!)</h2>
+
+        <pre><code class="html">
+
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Example&lt;/title&gt;
+    &lt;style&gt;
+      #result {
+        background-color: navy;
+        height: 50px;
+        width: 250px;
+        color: white;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 5px;
+      }
+    &lt;/style&gt;
+    &lt;script&gt;
+      function makeName() {
+        var firstName = document.getElementById('first-name').value;
+        var lastName = document.getElementById('last-name').value;
+        var result = firstName + ' ' + lastName;
+        document.getElementById('result').innerHTML = result;
+      }
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;The Amazing Name Calculator&lt;/h1&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;type first name here&quot; id=&quot;first-name&quot;&gt;
+    &lt;input type=&quot;text&quot; placeholder=&quot;type last name here&quot; id=&quot;last-name&quot;&gt;
+    &lt;button onclick=&quot;makeName()&quot;&gt;Click Me&lt;/button&gt;
+    &lt;p id=&quot;result&quot;&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+        </code></pre>
+
+        <p>See it in action <a href="../examples/week4/name-calculator.html">here</a>.</p>
+
 			</section>
 	
 		</div>

@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Example</title>
+		<style>
+			#result {
+				background-color: navy;
+				height: 50px;
+				width: 250px;
+				color: white;
+				border: 2px solid black;
+				border-radius: 10px;
+				padding: 5px;
+			}
+		</style>
+		<script>
+			function makeName() {
+				var firstName = document.getElementById('first-name').value;
+				var lastName = document.getElementById('last-name').value;
+				var result = firstName + ' ' + lastName;
+				document.getElementById('result').innerHTML = result;
+			}
+		</script>
+	</head>
+	<body>
+		<h1>The Amazing Name Calculator</h1>
+		<input type="text" placeholder="type first name here" id="first-name">
+		<input type="text" placeholder="type last name here" id="last-name">
+		<button onclick="makeName()">Click Me</button>
+		<p id="result"></p>
+	</body>
+</html>
