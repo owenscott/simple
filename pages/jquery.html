@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Owen Scott">
+		<title>jQuery</title>
+		<link rel="stylesheet" href="../assets/style.css"/>
+		<link rel="stylesheet" href="../assets/highlight.css">
+		<!--MIT LICENSE-->
+	</head>
+	
+	<body>
+
+
+
+		<div class="container">
+			
+			<header>
+				<ul class="nav">
+					<li><a href="../index.html">Back</a></li>
+				</ul>
+			</header>
+
+			<section>
+				<h1>1. JavaScript</h1>
+				<p>Last week we looked at JavaScript for the first time, and did some example exercises. Before continuing, it would be good to take a look back at the <a href="javascript.html">notes</a> and make sure you remember the basic ideas.</p>
+        <div class="task"><p><strong>Task 1.1:</strong> Implement a simple JavaScript program from scratch, using the concepts from last week. Nothing fancy - just a button that changes a style or part of the page text.</div>
+			</section>
+
+			<section>
+				<h1>2. jQuery</h1>
+				<p>Last week you might have also noticed that the syntax of JavaScript is a bit complicated. jQuery is a powerful toolkit that makes working with JavaScript easier. To include jQuery with our applications we first need to include the following script tag in our page's <code class="html">head</code>:</p>
+
+        <pre><code class="html">
+
+&lt;script src="http://code.jquery.com/jquery-1.11.2.min.js"&gt;&lt;/script&gt;
+
+        </pre></code>
+
+        <p>Make sure that you include this tag <strong><em>before</em></strong> the rest of your JavaScript.</p>
+
+				<h2>Simple Examples</h2>
+
+        <p>jQuery gives us access to simplified JavaScript syntax, based around the '<code>$</code>' character, as well as the CSS selectors which we are used to. For instance:</p>
+
+        <pre><code class="js">
+$('p')
+        </pre></code>
+
+        <p>would select all of the paragraphs in a document and:</p>
+
+        <pre><code class="js">
+$('p').html('Hello World');
+        </pre></code>   
+
+        <p>would change the text in every paragraph on the page to the words "Hello World". If we wanted to atach this event to a button we could do something like:</p>
+
+        <pre><code class="js">
+$('#my-button').on('click', function() {
+
+  $('p').html('Hello World');
+
+})
+        </code></pre>
+
+        <p>That <code>function() { ... }</code> block is called an <em>anonymous function</em> - think of it as simply a wrapper to enclose all fo the code which you wish to run whenever the button is clicked. The '<code>#my-button</code> is exactly like a CSS selector - it identifies the relevant button by its '<code>id</code>' attribute in the HTML.</p>
+
+        <p>Finally, we need to wrap the whole thing in a '<code>ready</code>' event listener to make sure none of the code is run before our HTML document is full loaded. The end result will look like this:</p>
+
+        <pre><code class="js">
+$('document').ready(function() {
+  
+  $('#my-button').on('click', function() {
+
+    $('p').html('Hello World');
+
+  })
+
+})
+        </code></pre>
+
+
+        <p>At this point it's probably easier to look at an <a href="../examples/week5/jquery.html">example</a> of everything. Do take a minute and check out the source code.</p>
+
+        <div class="task"><p><strong>Task 2.1:</strong> Implement your own 'Hello World' program using jQuery. Try not to copy-and-paste too much, but do pay attention to the syntax.</p></div>
+
+        <p>One of the reasons that jQuery is so popular is that it allows you to do much more complex interactions with similarly simple code. For instance, the <code>slideToggle</code> command will slide an element on or off of the page. Check out the source code of <a href="../examples/week5/slide-toggle.html">this site</a> to see it in action.</p>
+
+        <div class="task"><p><strong>Task 2.2: </strong>Try using the jQuery slideToggle function in a simple program. Once it's working do a Google search for 'jQuery effects' and see what other cool options you can find. (if you get stuck, <code>$(selector).fadeToggle()</code> is another option.</p></div>
+
+        <h2>Follow-Up</h2>
+
+        <p>If you think jQuery is something that you want to learn more about, CodeSchool's <a href="https://www.codeschool.com/courses/try-jquery">jQuery course</a> is as good as it gets!</p>
+
+      </section>
+    </div>
+
+		<script src="../assets/highlight.pack.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+
+	</body>
+</html>

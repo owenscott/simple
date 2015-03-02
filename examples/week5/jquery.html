@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>jQuery Example</title>
+
+		<style>
+		
+			body {
+				background-color: #000033;
+				color: white;
+				font-family: Cambria;
+				font-size: 24px;
+			}
+		
+			.container {
+				max-width: 900px;
+				margin: 50px auto;
+			}
+		
+			#my-button {
+				background-color: yellow;
+				color: black;
+				border: none;
+				min-width: 150px;
+				min-height: 50px;
+				border-radius: 5px;
+				font-size: 16px;
+			}
+		
+		</style>
+		
+		<!--Here is the jQuery library-->
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		
+		<!--Here is the custom script that uses it.-->
+		<script>
+
+			$('document').ready(function() {
+			  
+			  $('#my-button').on('click', function() {
+
+			    $('p').html('Hello World');
+
+			  })
+
+			})
+
+		</script>
+
+	</head>
+	
+	<body>
+		<div class="container">
+			<h1>jQuery Example</h1>
+			<p>Paragraph 1</p>
+			<p>Paragraph 2</p>
+			<p>Paragraph 3</p>
+			<p>Paragraph 4</p>
+			<button id="my-button">Click Here, I Dare You</button>
+		</div>
+	</body>
+
+</html>
